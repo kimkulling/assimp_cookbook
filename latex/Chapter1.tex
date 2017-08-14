@@ -1,0 +1,32 @@
+\begin{document}
+\section{Chapter 1: Install Asset-Importer-Lib}
+If you want to use the Asset-Importer-Lib you first have to install the package for your development-environment. There are different options you can choose of you want to
+work with Asset-Importer-Lib. If you are interested in using the library you can install it from the last pre-build binaries for your platform. If you want to test the
+latest features and bugfixes you can directly check-out the latest sources and build Asset-Importer-Lib from them.
+In the next sections I will describe each option more detailed.
+
+\subsection{Install Asset-Importer-Lib from installer ( Windows ) }
+If you are working on Windows you can install the pre-build binaries from the web. Just open assimp.org, follow the link to the latest release and download the 
+latest MSI to install the latest release.
+
+\subsection{Install Asset-Importer-Lib from installer ( Linux-Ubuntu ) }
+If you are working on Ubutu and you want to install Asset-IMporter-Lib you can install the DPKG-package via apt-get:
+Just refresh your installation in a fresh opened console:
+> sudo apt-get update
+> sudo apt-get install assimp-dev
+
+The package-manager will install the developer-libs and the corresponsding includes on your Ubuntu-installation.
+ 
+\subsection{Build Asset-Importer-Lib from source}
+If you want to hack around it makes sense to get the current developer branch from the project-page located on GitHub:
+> git clone https://github.com/assimp/assimp.git
+
+To build Asset-Importer-Lib from the source you need to install cmake first. It can be found at https://cmake.org/ . CMake is a tool to generate a build environment 
+for your preferred working environment. It can be used to generate a workspace for eclipe, QTCreator for Visual-Studio. Of course it is also useful for generating just 
+a makefile for GNU-make or ninja or something else. Just check its website if you want to learn more about its features. After installing it open a console and type
+> cd assimp
+> cmake CMakefiles.txt
+
+CMake will generate a working build environment for the Asset-Importer-Lib. Now you can open the Visual-Studio-Solution or just start a GNU-Make run on your dveloper PC.
+
+\end{document}
